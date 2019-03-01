@@ -1,0 +1,55 @@
+﻿@{
+    
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    List<SelectListItem> searchitems = new List<SelectListItem>();
+    List<SelectListItem> sortitems = new List<SelectListItem>();
+
+     searchitems.Add(new SelectListItem { Text = "Linear Search", Value = "0"});
+     searchitems.Add(new SelectListItem { Text = "Binary Search", Value = "1" });
+     
+     // Sort items
+     sortitems.Add(new SelectListItem { Text = "Bubble Sort", Value = "0" });
+     sortitems.Add(new SelectListItem { Text = "Insertion Sort", Value = "1" });
+
+}
+<script>
+
+    $(document).ready(function () {
+        $(".SearchOptions").click(function () {
+            $(".SortOptions").prop("disabled", false);
+        });
+    });
+</script>
+<div class="container">
+    <h2>Select Opearation To Perform</h2>
+    <div class="panel panel-default">
+        
+        <div class="panel-body">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>@Html.Label("Searching")</th>
+                        <th>Type of Search</th>
+                        <th>@Html.Label("Sorting")</th>
+                        <th>Type of Sort</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                     
+                        <td>@Html.RadioButton("Operation", "Searching")</td>
+                        <td>@Html.DropDownList("Search Options", searchitems, "Select", new { @class = "form-control" })</td>
+                        <td>@Html.RadioButton("Operation","Sorting")</td>
+
+                        <td>@Html.DropDownList("Sort Options", sortitems, "Select", new { @class = "form-control" })</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        
+        
+            </div>
+    </div>
+</div>
+
