@@ -11,7 +11,7 @@ namespace Sorting
     {
         static void Main(string[] args)
         {
-            Logics obj = new Logics();
+            /*Logics obj = new Logics();
             //int[] arr = new int[] { 3, 5,44, 0, 1, 4, 2,55,44,11,12,10,15,17,19,23,32,36,63,96,69,87,78,54,45,20,100,12,11,14,185,69,74,123,650 };
             //obj.Sort(arr);
             //obj.Swap(2, 3);
@@ -24,7 +24,20 @@ namespace Sorting
                 bool ans = obj.BinarySearch(arr[i], arr);
                 Console.WriteLine("Number : "+arr[i]+" found status : " + ans);            
             }
-                
+             */
+
+            Stack st = new Stack();
+            st.Push(1);
+            st.Push(2);
+            st.Push(3);
+            st.Push(4);
+            st.Push(5);
+            st.Show();
+            st.peek();
+            st.Pop();
+            st.Show();
+            
+
             Console.ReadKey();
         }
     }
