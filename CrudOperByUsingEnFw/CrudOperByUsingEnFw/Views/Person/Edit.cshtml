@@ -1,0 +1,33 @@
+﻿@model CrudOperByUsingEnFw.Models.PersonDto
+@{
+    Layout = null;
+}
+@{ViewBag.Title = "Edit";}
+
+
+@using (Html.BeginForm())
+{
+    <h3>Persons</h3>
+    <div>
+        <table>
+
+            @Html.HiddenFor(model => model.Id)
+            <tr>
+                @Html.LabelFor(model => model.Name)
+                @Html.EditorFor(model => model.Name)
+            </tr>
+            <tr>
+                @Html.LabelFor(model => model.Age)
+                @Html.EditorFor(model=>model.Age)
+            </tr>
+
+
+        </table>
+        
+        <div>
+            <input type="submit" value="Save" class="btn btn-default" />
+        </div>
+    </div>
+
+
+}

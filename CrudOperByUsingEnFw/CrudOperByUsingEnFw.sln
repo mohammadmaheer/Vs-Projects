@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrudOperByUsingEnFw", "CrudOperByUsingEnFw\CrudOperByUsingEnFw.csproj", "{0DEAEAA0-4517-4C8C-AFA7-85B2E1AE1109}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0DEAEAA0-4517-4C8C-AFA7-85B2E1AE1109}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DEAEAA0-4517-4C8C-AFA7-85B2E1AE1109}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DEAEAA0-4517-4C8C-AFA7-85B2E1AE1109}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DEAEAA0-4517-4C8C-AFA7-85B2E1AE1109}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {68EF18BB-08E8-4516-BD74-2FEFD7B48976}
+	EndGlobalSection
+EndGlobal

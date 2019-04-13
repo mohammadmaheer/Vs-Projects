@@ -1,0 +1,12 @@
+﻿@model OneToManyCrudOper.Models.SchoolDto
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm("Edit","School"))
+{
+    @Html.EditorFor(m=>m.Name)
+    <input type="submit" value="Edit" />
+}

@@ -1,0 +1,25 @@
+Primary key is a key from which we can uniquely identify tha data.
+
+Candidate key
+
+Foreign key (can b null) is a key which is tha primary key of another table.
+
+Unique key is key whose valuse is unique throughout the column and it can be null.
+
+Composite Primary key is a key which we can make by combining two column together.
+
+
+learn about views storedprocedure indexes, triggers, transaction?
+
+stored procedure is concept in which we can run multiple queries/statement and pas value from inside and outside and on also runtime.
+
+Transaction has 4 properties Atomicity, Consistency, Isolation, Durbility the
+
+
+What is a Trigger :
+A trigger is a special kind of a store procedure that executes in response to certain action on the table like insertion, deletion or updation of data. It is a database object which is bound to a table and is executed automatically. 
+aik table p hm kch kam kre or wo dsre table p implement ho triggers khlata h like hm kch value add krn dsra table m uska log create hjai k kb insert hua uska date time atc ajai triggers hta h.
+
+An index is used to speed up the performance of queries.An index is a copy of selected columns of data from a table that can be searched very efficiently that also includes a low-level disk block address or direct link to the complete row of data it was copied from.
+
+A view is a searchable object in database that is defined by query and can be described as virtual table which dervied data from one or more tables or columns. it can be created using tables of same or different database.

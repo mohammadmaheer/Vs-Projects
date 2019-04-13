@@ -1,0 +1,19 @@
+﻿@model OneToManyCrudOper.Models.StudentDto
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm("UploadFile", "FileUpload", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.DropDownListFor(m=>m.SchoolId,(IEnumerable<SelectListItem>)ViewBag.Schools)
+    @Html.EditorFor(m=>m.Name)
+    
+
+    <label for="file">Upload Image:</label>
+    <input type="file" name="image"/><br><br>
+    <input type="submit" value="Upload Image" />
+   
+    @*<input type="submit" value="Create"/>*@
+}

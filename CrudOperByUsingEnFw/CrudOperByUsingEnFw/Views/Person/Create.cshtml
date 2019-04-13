@@ -1,0 +1,20 @@
+﻿@model CrudOperByUsingEnFw.Models.PersonDto
+
+@{
+    Layout = null;
+}
+
+<title>Create</title>
+    
+    @using (Html.BeginForm()) 
+    {       <h4>Person</h4>
+                    @Html.LabelFor(model => model.Name)
+                    @Html.EditorFor(model => model.Name)
+                    @Html.LabelFor(model => model.Age)
+                    @Html.EditorFor(model => model.Age)
+                    <input type="submit" value="Create" class="btn btn-default" />
+    }
+    
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
